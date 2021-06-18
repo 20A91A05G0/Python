@@ -1,0 +1,14 @@
+def lcm(a,b):
+    if a>b:
+        c=a
+    else:
+        c=b
+    while True:
+        if c%a==0 and c%b==0:
+            print('LCM of ',a,b,'is',c)
+            break
+        c+=1
+a=int(input('enter a value:'))
+b=int(input('enter b value:'))
+lcm(a,b)
+
