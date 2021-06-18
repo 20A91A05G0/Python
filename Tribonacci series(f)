@@ -1,0 +1,17 @@
+def tribo(n):
+    a=0
+    b=1
+    c=1
+    print(a,b,c,end=' ')
+    for i in range(4,n+1):
+        d=a+b+c
+        print(d,end=' ')
+        a=b
+        b=c
+        c=d
+n=int(input('enter a number'))
+tribo(n)
+
+#output
+enter a number 8
+0 1 1 2 4 7 13 24
