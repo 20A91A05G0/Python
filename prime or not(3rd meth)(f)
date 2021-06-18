@@ -1,0 +1,17 @@
+def prime(k):
+    c=0
+    for i in range(1,(k//2)+1):
+        if k%i==0:
+            c+=1
+    if c>1:
+        print(k,'is not a prime')
+    else:
+        print(k,'is a prime')
+k=int(input('enter a number'))
+prime(k)
+    
+#output
+enter a number 5
+5 is a prime
+enter a number 8
+8 is not a prime
