@@ -1,0 +1,32 @@
+def reverse1(m):
+    rev=0
+    while m:
+        rem=m%10
+        rev=rev*10+rem
+        m=m//10
+    print(rev)
+m=int(input('enter a number'))
+reverse1(m)
+
+#output
+enter a number 456
+654
+enter a number 67
+76
+
+
+def reverse(n):
+    rev=0
+    while n:
+        rem=n%10
+        rev=rev*10+rem
+        n=n//10
+    return (rev)
+n=int(input('enter a number:'))
+print(reverse(n))
+    
+#output
+enter a number 143
+341
+enter a number 34
+43
