@@ -1,0 +1,24 @@
+def palindrome(n):
+    temp=n
+    rev=0
+    while n:
+        rem=n%10
+        rev=rev*10+rem
+        n=n//10
+    print(rev)
+    if (rev==temp):
+        print(temp,'is a palindrome')
+    else:
+        print(temp,'is not a palindrome')
+n=int(input('enter a number'))
+palindrome(n)
+
+#output
+enter a number 454
+454
+454 is a palindrome
+
+enter a number 123
+321
+123 is not a palindrome
+
