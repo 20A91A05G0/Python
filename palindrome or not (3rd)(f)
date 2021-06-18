@@ -1,0 +1,17 @@
+def palindrome(n):
+    global temp
+    global rev
+    temp=n
+    rev=0
+    while n:
+        rem=n%10
+        rev=rev*10+rem
+        n=n//10
+    return(rev)
+n=int(input('enter a number'))
+print(palindrome(n))
+if (rev==temp):
+    print(temp,'is a palindrome')
+else:
+    print(temp,'is not a palindrome')
+palindrome(n)
