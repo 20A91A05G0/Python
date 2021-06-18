@@ -1,0 +1,15 @@
+def gcd(a,b):
+    if a>b:
+        a,b=b,a
+    for i in range(a,0,-1):
+        if a%i==0 and b%i==0:
+            print('GCD of',a,b,'is',i)
+            break
+a=int(input('enter first number'))
+b=int(input('enter second number'))
+gcd(a,b)
+
+#output
+enter first number 4
+enter second number 8
+GCD of 8 12 is 4
