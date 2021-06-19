@@ -1,0 +1,11 @@
+def len(n):
+    if n is '':
+        return 0
+    else:
+        return(1+len(n[1: ]))
+n=input('enter a number')
+print(len(n))
+
+#output
+python class
+12
