@@ -1,0 +1,29 @@
+def prime(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    else:
+        return True
+    
+def reverse(n):
+    temp=n
+    rev=0
+    while n:
+        rem=n%10
+        rev=rev*10+rem
+        n=n//10
+    return(rev)
+n=int(input('enter a number'))
+print(reverse(n))
+if prime(n) and prime(reverse(n)):
+    print(True)
+else:
+    print(False)
+
+#output
+enter a number 17
+71
+True
+enter a number 23
+32
+False
