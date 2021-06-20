@@ -9,7 +9,7 @@ def prime(p):
         print(p,'is not a prime')
     else:
         print(p,'is a prime')
-p=int(input(' enter a number'))
+p=int(input('enter a number'))
 prime(p)
     
 #output
